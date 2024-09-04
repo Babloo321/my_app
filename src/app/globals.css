@@ -2,32 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.card{
+ margin: 5px;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.card:hover{
+  background-color: maroon;
+  color: white;
+  cursor: pointer;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* header */
+.header{
+  position:fixed;
+  top: 0px;
+  background-color: blue;
+  height: 10vh;
+  color: white;
+}
+.login_signup{
+  position: absolute;
+  top: 5px;
+  left: 40vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.chatbot{
+  position: relative;
+  top: 20px;
+  left: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.toogler{
+  position: fixed;
+  top: -2px;
+  left: 90vw;
 }

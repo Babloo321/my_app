@@ -1,0 +1,14 @@
+.container{
+  height: 100vh;
+  background-color: grey;
+  color: white;
+}
+.content_div{
+  padding: 2px;
+}
+.content_div>p{
+  color: orange;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 6px;
+  font-size: 18px;
+}
